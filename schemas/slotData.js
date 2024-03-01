@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from 'mongoose';
 
 const slotSchema = new mongoose.Schema(
     {
@@ -17,4 +17,4 @@ const slotSchema = new mongoose.Schema(
 
 const slotData = mongoose.model("slotData", slotSchema);
 
-module.exports = slotData;
+export default slotData;
